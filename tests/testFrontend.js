@@ -9,7 +9,7 @@ const testText = async (driver) => {
 
 const testButton = async (driver) => {
     await driver.get('http://localhost:3000');
-    const button = await driver.findElement(By.id('btn')).click();
+    await driver.findElement(By.id('btn')).click();
 
     // Wait for the alert to be displayed
     await driver.wait(until.alertIsPresent());

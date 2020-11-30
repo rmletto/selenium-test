@@ -15,7 +15,7 @@ describe('Sample test suite', () => {
         .build();
 
     test('Tests the /value endpoint', async () => {
-        expect(await testBackend(driver)).toBe('http://localhost:3000/value');
+        expect(await testBackend(driver)).toStrictEqual({ value: 42 });
     });
 
     test('Makes sure the text is set proper', async () => {
