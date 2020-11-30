@@ -7,7 +7,7 @@ describe('back-end REST API testing example', () => {
 
     const chromeCapabilities = Capabilities.chrome();
     const chromeOptions = {
-        'args': ['--no-sandbox', '--disable-dev-shm-usage', '--headless']
+        'args': ['--no-sandbox', '--disable-dev-shm-usage', '--headless', '--remote-debugging-port=9222']
     };
     chromeCapabilities.set('chromeOptions', chromeOptions);
     const driver = new Builder().withCapabilities(chromeCapabilities).build();
