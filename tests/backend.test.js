@@ -14,7 +14,7 @@ describe('back-end REST API testing example', () => {
         .build();
 
     test('Tests the /value endpoint', async () => {
-        expect(await testBackend(driver)).toBe('http://localhost:3000/value');
+        expect(await testBackend(driver)).toBe('http://localhost:3000/valueasdf');
     });
     
     afterAll(async () => {
