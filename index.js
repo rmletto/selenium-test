@@ -12,6 +12,8 @@ app.get('/value', (req, res) => {
     res.send({ value: 42 });
 });
 
-app.listen(port, () => {
+const server = app.listen(port, () => {
     console.log(`App listening at ${port}`);
 });
+
+module.exports = server;
